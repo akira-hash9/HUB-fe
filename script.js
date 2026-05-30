@@ -183,7 +183,7 @@ async function sendMessage() {
     chatMessages.scrollTop = chatMessages.scrollHeight;
 
     try {
-        const res = await fetch('https://project-socials-production.up.railway.app/ask', {
+        const res = await fetch('https://hub-fe-k5qy.onrender.com/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ prompt: text, historico })
